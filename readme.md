@@ -39,8 +39,22 @@ The PGx-KA can be used to compute the following two things in sequence. First, i
 
 For genotype-to-phenotype mapping computations, the Services that come as part of the PGx-KA expect genotype input about an person encoded using diplotypes, like this: 
 
+```JSON
+{
+    'CYP2D6':'*3/*3'
+}
+```
 
-For phenotype-to-recommendation computations, 
+For phenotype-to-recommendation computations, inputs look like this:
+
+```JSON
+{
+    'CYP2D6': {
+        'diplotype': '*3/*3',
+        'phenotype': 'Poor metabolizer'
+    }
+}
+```
 
 - - - 
 
