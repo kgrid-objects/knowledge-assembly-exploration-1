@@ -56,6 +56,8 @@ For phenotype-to-recommendation computations, inputs look like this:
 }
 ```
 
+To try out the Knowlede Assembly and its functions, an interactive Google Colab workbook is available [online here](https://colab.research.google.com/drive/1giJbbABb2UBuFFSQPiIZBm7HVIc8-egI?usp=sharing).
+
 - - - 
 
 ### Why was the PGx-KA example KA-KO initially created?
