@@ -1,4 +1,4 @@
-from .knowledge_sets import knowledgeSet1Payloads, knowledgeSet2Payloads
+from .knowledge_imports import knowledgeSet1Payloads, knowledgeSet2Payloads
 
 def run(input_data):
     try:
