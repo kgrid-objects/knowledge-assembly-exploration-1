@@ -1,4 +1,4 @@
-import {knowledgeSet1Payloads, knowledgeSet2Payloads, knowledgeSet3Payloads} from "./knowledge-sets.js";
+import {knowledgeSet1Payloads, knowledgeSet2Payloads, knowledgeSet3Payloads} from "./knowledge-imports.js";
 
 async function run(input) {
 
