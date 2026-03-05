@@ -93,6 +93,7 @@
                 "Service"
             ],
             "dc:description": "A service interface that accepts a genetic profile and provide access to patient specific pain medication drug selection and dosing recommendations. See sample.profile for example.",
+            "koio:hasInterface":"sample.profile",
             "dependsOn": [
                 "ks1",
                 "ks2"
@@ -124,6 +125,7 @@
                 "Service"
             ],
             "dc:description": "A service interface that accepts a genetic profile and provide access to patient specific drug selection and dosing recommendations. See sample.profile for example.",
+            "koio:hasInterface":"sample.profile",
             "dependsOn": [
                 "ks1",
                 "ks2",
