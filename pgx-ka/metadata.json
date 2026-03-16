@@ -93,7 +93,7 @@
                 "Service"
             ],
             "dc:description": "A service interface that accepts a genetic profile and provide access to patient specific pain medication drug selection and dosing recommendations. See sample.profile for example.",
-            "koio:hasInterface":"sample.profile",
+            "koio:hasInterface": "sample.profile",
             "dependsOn": [
                 "ks1",
                 "ks2"
@@ -125,7 +125,7 @@
                 "Service"
             ],
             "dc:description": "A service interface that accepts a genetic profile and provide access to patient specific drug selection and dosing recommendations. See sample.profile for example.",
-            "koio:hasInterface":"sample.profile",
+            "koio:hasInterface": "sample.profile",
             "dependsOn": [
                 "ks1",
                 "ks2",
@@ -152,6 +152,14 @@
                         "Implementation"
                     ],
                     "dc:description": "A JavaScript implementation of all-recommendation service as an API"
+                }
+            ],
+            "hasDocumentation": [
+                {
+                    "@id": "ServiceReadMe.md",
+                    "@type": "InformationArtifact",
+                    "dc:title": "PGx-KA Service Documentation",
+                    "dc:description": "PGx-KA Service Documentation"
                 }
             ],
             "hasTest": [

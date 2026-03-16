@@ -11,7 +11,7 @@
             margin: 20px;
         }
         .container {
-            max-width: 1000px;
+            max-width: 1400px;
             margin: auto;
             display: flex;
             width: 100%;
@@ -47,12 +47,10 @@
         .doc-section, .test-section {
             
             right: 20px;
-            width: 250px;
             color: black;
             padding: 10px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 250px;
             font-size: 16px;
         }
         .doc-section {
@@ -92,30 +90,65 @@
             <div class="metadata" id="metadata">
             <h1>CPIC Genotype - Phenotype for CYP2D6 v0.3.0</h1>
             <p>Genotype to Phenotype definitions for CYP2D6 according to CPIC and DPWG</p>
-            <p><strong>Id:</strong> <a href="https://github.com/kgrid-objects/pgx-knowledge-assembly/blob/main/collection/CPIC_Phenotype_CYP2D6" target='_blank'> 
+            <p><strong>ID:</strong> <a href="https://github.com/kgrid-objects/pgx-knowledge-assembly/blob/main/collection/CPIC_Phenotype_CYP2D6" target='_blank'> 
                 v1.1
             </a></p>
-            <p><strong>Identifier:</strong> ark:/99999/fk49z9gr7p/v1.1</p>
-            <p><strong>Type:</strong> <a href="https://kgrid.org/koio#KnowledgeObject" target='_blank'>https://kgrid.org/koio#KnowledgeObject</a></p>
+            <p><strong>Information page metadata:</strong> <a href="https://github.com/kgrid-objects/pgx-knowledge-assembly/blob/main/collection/CPIC_Phenotype_CYP2D6/metadata.json" target='_blank'> 
+                metadata.json 
+            </a></p>
+            
+            
+            
+                <strong>Identifier:</strong>
+                                 
+                                     
+                    ark:/99999/fk49z9gr7p/v1.1      
+                
+            
+            
+            
+            
+            <p><strong>Type:</strong> <a href="https://kgrid.org/koio#KnowledgeObject" target='_blank'>KnowledgeObject</a></p>
             <p><strong>Version:</strong> v1.1</p>
             <p><strong>Date:</strong> 2025-05-22</p>
             
             
+            
             <hr>
-            <h2>Creator</h2>
-            <p><strong>Name:</strong> Knowledge Systems Lab
-                 </p>
-            <p><strong>Affiliation:</strong> Knowledge Systems Lab, University of Michigan Medical School</p>
-            <p><strong>Email:</strong> 
-                <a href="mailto:kgrid-developers@umich.edu" target='_blank'>
-                    kgrid-developers@umich.edu
-                </a>
-            </p>
-            <p><strong>Website:</strong> 
-                <a href="https://kgrid.org" target='_blank'>
-                    https://kgrid.org
-                </a>
-            </p>
+            
+            
+            
+                <h2>Creator</h2>
+                 
+                <ul>  
+                 
+                    <li>
+                        <h3> Knowledge Systems Lab
+                             </h3>
+                        <p><strong>Affiliation:</strong> Knowledge Systems Lab, University of Michigan Medical School</p>
+                        
+                        
+                            <p><strong>Email:</strong> 
+                                <a href="mailto:kgrid-developers@umich.edu" target='_blank'>
+                                    kgrid-developers@umich.edu
+                                </a>
+                            </p>
+                        
+                        <p><strong>Website:</strong> 
+                            <a href="https://kgrid.org" target='_blank'>
+                                https://kgrid.org
+                            </a>
+                        </p>
+                    </li>
+                   
+                </ul>
+            
+            
+            
+            
+            
+                              
+            
 
             
                 <hr>
@@ -123,13 +156,18 @@
                 
                     
                     
+                    
+                    <a id="genotype_to_Phenotype_for_CYP2D6"></a>
                     </p>
                         <p><h3> genotype_to_Phenotype_for_CYP2D6</h3></p>
                          
-                    
+                    <p><strong>ID:</strong> 
+                        genotype_to_Phenotype_for_CYP2D6
+                    </p>
+
                     <p><strong>Type:</strong> 
                             <a href="https://kgrid.org/koio#Knowledge" target='_blank'>
-                                https://kgrid.org/koio#Knowledge
+                                Knowledge
                             </a>
                     </p>
                     
@@ -202,16 +240,7 @@
                                 phenotype.js
                             </a><br/>(type: 
                                 
-                                
-                                  
-                                    
-                                        <a href="https://w3id.org/function/ontology#Function" target='_blank'>
-                                            https://w3id.org/function/ontology#Function
-                                        </a>
-                                      
-                                
-                                
-                                )
+                                <a href="https://w3id.org/function/ontology#Function" target='_blank'>https:w3id.orgfunctionontology#Function</a>)
                             </li>
                         
                             <li>
@@ -219,16 +248,7 @@
                                 phenotype.py
                             </a><br/>(type: 
                                 
-                                
-                                  
-                                    
-                                        <a href="https://w3id.org/function/ontology#Function" target='_blank'>
-                                            https://w3id.org/function/ontology#Function
-                                        </a>
-                                      
-                                
-                                
-                                )
+                                <a href="https://w3id.org/function/ontology#Function" target='_blank'>https:w3id.orgfunctionontology#Function</a>)
                             </li>
                         
                         </ul>
@@ -244,20 +264,33 @@
             
             <hr>
             <h2>Services</h2>
-            
+                Services should pick up service description file and link it
+                Pain medication service need some documentation just like the serviceReadMe, Maybe point to google colab and say how it uses it
+                Mention the flexibility of KA where it could provide purpose specific services, but a subset of the KOs in KA can also be used in any other way by the application which depends on the KA. The KA is not limiting the developers to just use the KOs using the services.
+                Mention that separating the g2p and p2r in the run method could improve the readability of the code.
+                KSets could be nameed in a more clear way clarifying what the list is about like cpic_Genotype_phenotype_KSet or something like that.
+                The KSets could have a source just like the KOs
+                The Run method in library service could be named pgx with the option to use just a subset of KOs in KSets.
+                Better naming can be used for functions, Ksets and services
+                The api service does not need to use runtime loading instead it could just use the library service
+                Add conclusion about library service being recommended over plugin service
+                The knowledge loader for plugin service could be extracted to SDK.
+
+
             
 
                 <p><h3> library_service</h3></p>
                 <p><strong>Type:</strong> 
                         <a href="https://kgrid.org/koio#Service" target='_blank'>
-                            https://kgrid.org/koio#Service
+                            Service
                         </a>
                 </p>
                 <p><strong>Depends on:</strong> 
                 
                 
-                    genotype_to_Phenotype_for_CYP2D6
                 
+                    
+                    <a href="#genotype_to_Phenotype_for_CYP2D6">genotype_to_Phenotype_for_CYP2D6</a>
                 
                 </p>
                 
@@ -305,25 +338,54 @@
             <div class="test-section" id="test-section">
             
                 <h2>Tests</h2>
+                <ul>
                 
-                    <h3><a href="https://github.com/kgrid-objects/pgx-knowledge-assembly/blob/main/collection/CPIC_Phenotype_CYP2D6/tests/CYP2D6-geno-pheno.test.js" target='_blank'>Service Tests (JavaScript)</a></h3>
-                    <p>These tests are written to test the functionality and correctness of the JavaScript library service.</p>
-                    
-                        <p><strong>Test of</strong> library_service (koio#Service) </p>
-                    
+                    <li>
+                        <h3><a href="https://github.com/kgrid-objects/pgx-knowledge-assembly/blob/main/collection/CPIC_Phenotype_CYP2D6/tests/CYP2D6-geno-pheno.test.js" target='_blank'>Service Tests (JavaScript)</a></h3>
+                        <p>These tests are written to test the functionality and correctness of the JavaScript library service.</p>
+                        
+                            <p><strong>Test of:</strong> library_service (koio#Service) </p>
+                        
+                        <p><strong>Type:</strong> 
+                        
+                          
+                                <a href="https://github.com/kgrid-objects/pgx-knowledge-assembly/blob/main/collection/CPIC_Phenotype_CYP2D6/Javascript" target='_blank'>
+                                    Javascript
+                                </a>
+                        
+                    </li>
                 
-                    <h3><a href="https://github.com/kgrid-objects/pgx-knowledge-assembly/blob/main/collection/CPIC_Phenotype_CYP2D6/tests/test_service.py" target='_blank'>Service Tests (Python)</a></h3>
-                    <p>These tests are written to test the functionality and correctness of the Python library service.</p>
-                    
-                        <p><strong>Test of</strong> library_service (koio#Service) </p>
-                    
+                    <li>
+                        <h3><a href="https://github.com/kgrid-objects/pgx-knowledge-assembly/blob/main/collection/CPIC_Phenotype_CYP2D6/tests/test_service.py" target='_blank'>Service Tests (Python)</a></h3>
+                        <p>These tests are written to test the functionality and correctness of the Python library service.</p>
+                        
+                            <p><strong>Test of:</strong> library_service (koio#Service) </p>
+                        
+                        <p><strong>Type:</strong> 
+                        
+                          
+                                <a href="http://www.ebi.ac.uk/swo/SWO_0000118" target='_blank'>
+                                    SWO_0000118
+                                </a>
+                        
+                    </li>
                 
-                    <h3><a href="https://github.com/kgrid-objects/pgx-knowledge-assembly/blob/main/collection/CPIC_Phenotype_CYP2D6/tests/test_knowledge.py" target='_blank'>Knowledge Tests (Python)</a></h3>
-                    <p>These tests are written to test the knowledge for CYP2D6 genotype to phenotype conversion.</p>
-                    
-                        <p><strong>Test of</strong> genotype_to_Phenotype_for_CYP2D6 (koio#Knowledge) </p>
-                    
+                    <li>
+                        <h3><a href="https://github.com/kgrid-objects/pgx-knowledge-assembly/blob/main/collection/CPIC_Phenotype_CYP2D6/tests/test_knowledge.py" target='_blank'>Knowledge Tests (Python)</a></h3>
+                        <p>These tests are written to test the knowledge for CYP2D6 genotype to phenotype conversion.</p>
+                        
+                            <p><strong>Test of:</strong> genotype_to_Phenotype_for_CYP2D6 (koio#Knowledge) </p>
+                        
+                        <p><strong>Type:</strong> 
+                        
+                          
+                                <a href="http://www.ebi.ac.uk/swo/SWO_0000118" target='_blank'>
+                                    SWO_0000118
+                                </a>
+                        
+                    </li>
                 
+                </ul>
             
             </div>
         </div>
