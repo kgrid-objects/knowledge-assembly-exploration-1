@@ -1,4 +1,4 @@
-# PGx-KA Service Documentation
+# PGx-KA All-recommendation Service Documentation
 
 ## Library Service
 Library service could be used both on client side or server side. This service will load the knwoledge objects at build time.
