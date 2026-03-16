@@ -196,7 +196,7 @@
     ],
     "hasDocumentation": [
         {
-            "@id": "https://github.com/kgrid-objects/pgx-knowledge-assembly/blob/main/readme.md",
+            "@id": "https://github.com/kgrid-objects/knowledge-assembly-exploration-1/blob/main/pgx-ka/readme.md",
             "@type": "InformationArtifact",
             "dc:title": "README.md",
             "dc:description": "PGx-KA readme file."
