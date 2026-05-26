@@ -4,7 +4,7 @@ version = "1.0"
 description = "A sample knowledge assembly that uses CPIC and DPWG collections (KnowledgeSets)."
 authors = ["Knowledge Systems Lab, University of Michigan <kgrid-developers@umich.edu>"]
 license = "license.md"
-readme = "README.md"
+readme = "readme.md"
 packages = [{ include = "pain_therapy_recommendation" }]
 
 [tool.poetry.dependencies]
