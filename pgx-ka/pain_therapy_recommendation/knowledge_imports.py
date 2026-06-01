@@ -1,4 +1,4 @@
-from cpic_phenotype_cyp2d6 import phenotype as cpicPhenotypeCYP2D6
+from cpic_phenotype_cyp2d6 import phenotype_by_diplotype as cpicPhenotypeCYP2D6
 
 from cpicrec_codeine_cyp2d6 import dosingrecommendation as cpicRecCodeineCYP2D6
 from cpicrec_tramadol_cyp2d6 import dosingrecommendation as cpicRecTramadolCYP2D6
