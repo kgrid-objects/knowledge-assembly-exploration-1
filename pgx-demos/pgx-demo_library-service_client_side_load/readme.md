@@ -15,7 +15,7 @@ npm uninstall pgx-ka
 and then install it from a local place or published version if any, using
 
 ```shell
-npm install /home/path/to/pgx-knowledge-assembly/pgx-ka
+npm install /home/path/to/knowledge-assembly-exploration-1/pgx-ka
 ```
 
 If you are installing pgx-ka from a local place, make sure all its dependencies are installed there by running `npm install` in the root of that local place.
