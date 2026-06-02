@@ -40,7 +40,7 @@ Vue.component('recomtile', {
       return obj
     },
     objlink: function () {
-      return `https://kgrid-objects.github.io/pgx-knowledge-assembly/${this.recsource}_${this.reckey}.html`;
+      return `https://kgrid-objects.github.io/knowledge-assembly-exploration-1/${this.recsource}_${this.reckey}.html`;
     }
   }
 })
@@ -65,7 +65,7 @@ var demo = new Vue({
       recommendationlistks3: [],
       activeTab: 'assembly',
       chatbotUrl: 'https://llmchatbot-d6e6fdd6b02f.herokuapp.com/',
-      assemblyUrl: 'https://kgrid-objects.github.io/pgx-knowledge-assembly/pgx_ka_info_page.html'
+      assemblyUrl: 'https://kgrid-objects.github.io/knowledge-assembly-exploration-1/pgx_ka_info_page.html'
     }
   },
   created: function () {
