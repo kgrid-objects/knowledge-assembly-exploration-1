@@ -1,12 +1,12 @@
 {
   "@context": "https://kgrid.org/koio/2.1/context.jsonld",
-  "@id": "99999/fk49z9gr7p/v1.1",
+  "@id": "99999/fk49z9gr7p/v2.0",
   "versionInfo": "2.1",
   "@type": "KnowledgeObject",
   "dc:title": "CPIC Genotype - Phenotype for CYP2D6 v0.3.0",
   "dc:identifier": "ark:/99999/fk49z9gr7p/v1.1",
-  "dc:version": "v1.1",
-  "dc:date": "2025-05-22",
+  "dc:version": "v2.0",
+  "dc:date": "2026-06-01",
   "dc:description": "Genotype to Phenotype definitions for CYP2D6 according to CPIC and DPWG",
   "schema:creator": {
     "@id": "https://kgrid.org",
@@ -20,8 +20,8 @@
       "@id": "genotype_to_Phenotype_for_CYP2D6",
       "@type": "koio:Knowledge",
       "dc:publisher": "Clinical Pharmacogenomics Implementation Consortium",
-      "dc:date": "2019-03",
-      "dc:source": "https://cpicpgx.org/wp-content/uploads/2019/03/Final-Consensus-CYP2D6-genotype-to-phenotype-table_-final_Mar2019.pdf",
+      "dc:date": "2026-06-11",
+      "dc:source": "https://files.cpicpgx.org/data/report/current/diplotype_phenotype/CYP2D6_Diplotype_Phenotype_Table.xlsx",
       "dc:description": "Expert consensus for CYP2D6 phenotype definitions based on genotype",
       "dc:isReferencedBy": "https://pubmed.ncbi.nlm.nih.gov/31647186/",
       "schema:creator": [
@@ -34,12 +34,13 @@
       ],
       "implementedBy": [
         {
-          "@id": "phenotype.js",
-          "@type": "Function"
+          "@id": "cpic_phenotype_cyp2d6/CYP2D6_Diplotype_Phenotype_Table.csv",
+          "@type": "LookupTable"
         },
         {
-          "@id": "cpic_phenotype_cyp2d6/phenotype.py",
-          "@type": "Function"
+          "@id": "phenotype.js",
+          "@type": "Function",
+          "schema:supersededBy": "cpic_phenotype_cyp2d6/CYP2D6_Diplotype_Phenotype_Table.csv"
         }
       ],
       "hasTest": [
@@ -58,24 +59,66 @@
   ],
   "hasService": [
     {
-      "@id": "library_service",
+      "@id": "phenotype_service",
       "@type": [
         "Service"
       ],
       "dc:description": "A JavaScript/Python library with a function that accepts a genetic profile and provide corresponding phenotypes.",
-      "hasInterface": "library_service_specification.md",
+      "hasInterface": "phenotype_service_specification.md",
       "dependsOn": [
         "genotype_to_Phenotype_for_CYP2D6"
       ],
       "implementedBy": [
         {
-          "@id": "phenotype.js",
+          "@id": "cpic_phenotype_cyp2d6/phenotype_by_diplotype.py",
           "@type": [
             "Implementation"
           ]
         },
         {
-          "@id": "cpic_phenotype_cyp2d6/phenotype.py",
+          "@id": "phenotype.js",
+          "@type": [
+            "Implementation"
+          ],
+          "schema:supersededBy": "cpic_phenotype_cyp2d6/phenotype_by_diplotype.py"
+        }
+      ],
+      "hasTest": [
+        {
+          "@id": "python_phenotype_tests",
+          "dc:title": "Service Tests (Python)",
+          "@type": "Test",
+          "dc:description": "These tests are written to test the functionality and correctness of the Python phenotype service.",
+          "implementedBy": {
+            "@id": "tests/test_phenotype_service.py",
+            "@type": "Python"
+          }
+        },
+        {
+          "@id": "javascript_phenotype_tests",
+          "dc:title": "Service Tests (JavaScript)",
+          "@type": "Test",
+          "dc:description": "These tests are written to test the functionality and correctness of the JavaScript phenotype service.",
+          "implementedBy": {
+            "@id": "tests/CYP2D6-geno-pheno.test.js",
+            "@type": "Javascript"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "diplotype_service",
+      "@type": [
+        "Service"
+      ],
+      "dc:description": "A Python library with a function that accepts a phenotype and provides corresponding diplotypes.",
+      "hasInterface": "diplotype_service_specification.md",
+      "dependsOn": [
+        "genotype_to_Phenotype_for_CYP2D6"
+      ],
+      "implementedBy": [
+        {
+          "@id": "cpic_phenotype_cyp2d6/diplotype_for_phenotype.py",
           "@type": [
             "Implementation"
           ]
@@ -83,22 +126,12 @@
       ],
       "hasTest": [
         {
-          "@id": "javascript_library_tests",
-          "dc:title": "Service Tests (JavaScript)",
-          "@type": "Test",
-          "dc:description": "These tests are written to test the functionality and correctness of the JavaScript library service.",
-          "implementedBy": {
-            "@id": "tests/CYP2D6-geno-pheno.test.js",
-            "@type": "Javascript"
-          }
-        },
-        {
-          "@id": "python_library_tests",
+          "@id": "python_diplotype_tests",
           "dc:title": "Service Tests (Python)",
           "@type": "Test",
-          "dc:description": "These tests are written to test the functionality and correctness of the Python library service.",
+          "dc:description": "These tests are written to test the functionality and correctness of the Python diplotype service.",
           "implementedBy": {
-            "@id": "tests/test_service.py",
+            "@id": "tests/test_diplotype_service.py",
             "@type": "Python"
           }
         }
