@@ -1,5 +1,5 @@
 # Codeine Dosing Service Specification 
-This is a question-answering service for answering the following question, "What is the CYP2D6 phenotype associated with any given diploytype?"
+This is a service that offers codeine dosing advice based on a person's CYP2D6 phenotype.
 
 This service accepts an input like
 
