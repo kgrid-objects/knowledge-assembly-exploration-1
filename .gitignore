@@ -15,3 +15,4 @@ poetry.lock
 .pytest_cache/
 .env
 chatbot_logs.log
+pgx-ka/.venv/
